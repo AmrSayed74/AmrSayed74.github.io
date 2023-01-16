@@ -1,0 +1,266 @@
+@use "../helpers/index" as*;
+
+.main-section {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  position: relative;
+}
+
+.pt-section-content {
+  padding-top: var(--content-padding-top);
+}
+
+/* ====== Start Section Balls ====== */
+.ball-1,
+.ball-2,
+.ball-5 {
+  width: 10px;
+  height: 10px;
+}
+
+.ball-3,
+.ball-4 {
+  width: 7px;
+  height: 7px;
+}
+
+.big-ball-1,
+.big-ball-2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.ball-2,
+.ball-5,
+.big-ball-1,
+.big-ball-2 {
+  animation: rotate 4s linear 0s infinite forwards;
+}
+
+.ball-1,
+.ball-2,
+.ball-3,
+.ball-4,
+.ball-5,
+.big-ball-1,
+.big-ball-2 {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135.15deg,
+      #ae80dc 1.17%,
+      #dc83c3 31.88%,
+      #8084dc 65.46%);
+
+  filter: blur(1px);
+  opacity: 0.6;
+  box-shadow: 0px 1px 4px 0px #8084dc;
+}
+
+.ball-3 {
+  background: linear-gradient(90deg, #fea989 0.02%, #f8612a 98.92%);
+  filter: blur(3px);
+  box-shadow: 1px 1px 1px 1px #fff7f7;
+}
+
+.ball-1 {
+  top: 97%;
+  right: 20px;
+  animation: up-down 2s infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+.ball-2 {
+  top: 60%;
+  left: 20px;
+}
+
+.ball-3 {
+  top: 32%;
+  right: 28%;
+}
+
+.ball-4 {
+  top: 20%;
+  right: 30px;
+}
+
+.ball-5 {
+  top: 10%;
+  right: 20px;
+}
+
+.big-ball-1 {
+  top: 60%;
+  left: 20px;
+}
+
+.big-ball-2 {
+  top: 25%;
+  right: 20px;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate(-5px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-5px) rotate(-360deg);
+  }
+}
+
+
+/* ====== End Section Balls ====== */
+
+/* ====== Start Section Heading ====== */
+
+.heading {
+  color: var(--light-color);
+  color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+  width: fit-content;
+  margin: 0 auto var(--m-32);
+  font-size: var(--mid-font-size);
+  position: relative;
+  text-transform: capitalize;
+  transition: 0.1s;
+  z-index: 1;
+  border-radius: var(--rounded);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--p-20);
+
+  &:hover {
+    color: white;
+    border: none;
+  }
+
+  h3 {
+    transition: var(--transition);
+    color: var(--light-color);
+    cursor: default;
+  }
+  &:hover h3 {
+    letter-spacing: 3px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: .5s;
+
+  }
+
+  &::before {
+    left: -30px;
+  }
+
+  &::after {
+    right: -30px;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 53%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    left: -1px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:hover::after {
+    right: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading {
+    font-size: var(--normal-font-size);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .heading {
+    font-size: var(--small-font-size);
+  }
+}
+
+/* ====== End Section Heading ====== */
+
+
+/* ====== Start Section Lighting ====== */
+.light-1,
+.light-2,
+.light-3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  overflow-x: clip;
+
+  &::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background-color: var(--main-color);
+    filter: blur(150px);
+    border-radius: 50%;
+  }
+}
+
+.light-1 {
+  &::after {
+    left: -290px;
+    top: -150px;
+  }
+}
+
+.light-2 {
+  &::after {
+    right: -290px;
+    top: -207px;
+  }
+}
+
+.light-3 {
+  &::after {
+    left: -290px;
+    top: -293px;
+  }
+}
+
+/* ====== End Section Lighting ====== */

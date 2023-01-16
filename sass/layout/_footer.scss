@@ -1,0 +1,49 @@
+@use "../helpers/index" as*;
+@use "../components/components" as*;
+
+#footer {
+  position: relative;
+  padding: var(--p-30) 0;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    gap: 30px;
+
+    .logo {
+      width: 100px;
+    }
+
+    .social-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        width: 40px;
+        transition: var(--transition);
+        transform: scale(0.9);
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    hr {
+      color: var(--main-color);
+    }
+
+    .copy-right {
+      color: var(--light-color);
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-bold);
+    }
+  }
+}

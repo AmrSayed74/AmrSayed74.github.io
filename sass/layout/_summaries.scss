@@ -1,0 +1,43 @@
+@use "../helpers/index" as*;
+@use "../components/components" as*;
+
+#summaries {
+  background-color: var(--secondary-dark-color);
+  
+  .summaries-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    position: relative;
+    z-index: 1;
+
+    .ball-4 {
+      top: 32%;
+      right: 28%;
+    }
+
+    .summary {
+      h3 {
+        font-size: var(--mid-font-size);
+      }
+
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      flex-direction: column;
+      gap: 20px;
+
+      h3 {
+        color: var(--light-color);
+      }
+
+      .pdf-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}

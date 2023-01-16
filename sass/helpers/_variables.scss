@@ -1,0 +1,77 @@
+// Import Montserrat Google Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+// Import Cairo Font 
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800;900;1000&display=swap');
+
+:root {
+  /* ========== Preload ========== */
+  --preload: 0;
+  
+  /* ========== Colors ========== */
+  --main-color: #006eff;
+  --secondary-color: #009bff;
+  --light-color: #ffffff;
+  --dark-color: #050823;
+  --secondary-dark-color: #080c2f;
+
+  /* ========== Transition ========== */
+  --transition: 0.4s;
+  /*========== Scroll Down Button ==========*/
+  --color: white;
+  --sizeX: 30px;
+  --sizeY: 50px;
+  /* ========== Fonts ========== */
+  --body-font1: 'Montserrat', sans-serif;
+  --body-font2: 'Cairo', sans-serif;
+  --biggest-font-size: 2rem; //32px
+  --bigger-font-size: 1.5625rem; //25px
+  --mid-font-size: 1.25rem; //20px
+  --normal-font-size: 1rem; //16px
+  --small-font-size: .9063rem; //14.5px
+  --smaller-font-size: .8125rem; //13px
+  --smallest-font-size: .75rem; //12px
+
+  @media screen and (min-width: 1200px) {
+    --biggest-font-size: 2.375rem; //38px
+    --bigger-font-size: 1.875rem; //30px
+    --mid-font-size: 1.5rem; //24px
+    --normal-font-size: 1.0625rem; //17px
+    --small-font-size: .9375rem; //15px
+    --smaller-font-size: .875rem; //14px
+    --smallest-font-size: .8125rem; //13px
+  }
+
+  /*========== Border Radius ==========*/
+  --rounded: .375rem;
+
+  /* ========== Font weight ========== */
+  --font-light: 300;
+  --font-semi-bold: 500;
+  --font-bold: 700;
+  --font-extra-bolder: 900;
+
+  /* ========== Margins ========== */
+  --m-8: .5rem;
+  --m-12: .75rem;
+  --m-16: 1rem;
+  --m-20: 1.25rem;
+  --m-24: 1.5rem;
+  --m-32: 2rem;
+
+  /* ========== Padding ========== */
+  // Sections
+  --padding-top: 5rem;
+  --padding-bottom: 5rem;
+  --content-padding-top: 1.875rem;
+
+  /* ========== Padding Elements & Cards ========== */
+  --p-5: .3125rem;
+  --p-10: .625rem;
+  --p-15: .9375rem;
+  --p-20: 1.25rem;
+  --p-25: 1.5625rem;
+  --p-30: 1.875rem;
+  --p-35: 2.1875rem;
+  --p-40: 2.5rem;
+  --p-45: 2.8125rem;
+}

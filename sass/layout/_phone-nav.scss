@@ -1,0 +1,145 @@
+@use "../helpers/index" as*;
+@use "../components/components" as*;
+
+#phone-nav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #phone-nav {
+    display: block;
+    position: absolute;
+    height: calc(100vh - 80px);
+    width: 101%;
+    z-index: 1000;
+    top: -1300%;
+    transition: var(--transition);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    display: grid;
+    grid-template-rows: 70% 1fr;
+    row-gap: 5px;
+    background: rgb(35 41 62 / 98%);
+
+    &.show {
+      top: 80px;
+    }
+
+    .phone-nav-ul {
+      display: grid;
+      gap: 5px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      height: 100%;
+      align-items: center;
+      justify-items: center;
+
+      .phone-nav-li {
+        flex-basis: calc(50% - 10px);
+        height: 100%;
+        width: 100%;
+        border-radius: var(rounded);
+        transition: var(--transition);
+        background-color: #060e39cc;
+
+        &:hover:not(&:nth-child(4)) {
+          letter-spacing: 2px;
+        }
+
+        &:hover:nth-child(4) {
+          letter-spacing: 1px;
+        }
+
+        .phone-link {
+          color: var(--light-color);
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .social-contact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      align-items: center;
+      justify-items: center;
+
+      div {
+        background-color: #060e39bd;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &:hover .social-link{
+          transform: scale(1.2);
+        }
+        .social-link {
+          transition: var(--transition);
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 35px;
+          }
+        }
+      }
+
+      .facebook {
+        background-color: #3b599880;
+      }
+
+      .whats {
+        background-color: #075e5466;
+      }
+
+      .instagram {
+        background-color: #8a3ab980;
+      }
+
+      .gmail {
+        background-image: linear-gradient(90deg, #4285f480, #ff980080, #e0e0e080);
+      }
+
+      .github {
+        background: #17151580;
+      }
+
+      .linkedin {
+        background: #0072b16b;
+      }
+
+      .youtube {
+        background-color: #ff00002e;
+        position: relative;
+        &::after {
+          content: "Soon";
+          position: absolute;
+          color: #ffffff8c;
+          font-size: var(--mid-font-size);
+          font-weight: var(--font-semi-bold);
+          letter-spacing: 10px;
+          cursor: pointer;
+      
+        }
+      }
+
+      .codepen {
+        background: #3c3b4166;
+      }
+
+      .twitter {
+        background-color: #00acee7a;
+      }
+    }
+  }
+}

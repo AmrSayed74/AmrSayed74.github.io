@@ -1,0 +1,116 @@
+@use "../helpers/index" as*;
+@use "../components/components" as*;
+
+#about {
+  background-color: var(--secondary-dark-color);
+
+  .about-content {
+    position: relative;
+    overflow: hidden;
+
+    p {
+      color: var(--light-color);
+      max-width: 550px;
+      line-height: 1.8;
+      text-align: center;
+      margin: auto;
+      font-size: calc(var(--mid-font-size) - 2px);
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-semi-bold);
+      font-style: italic;
+    }
+
+    .learning,
+    .good-handel,
+    .current-learning,
+    .will-learning {
+      overflow: hidden;
+
+      h2 {
+        color: var(--light-color);
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: var(--bigger-font-size);
+        transition: var(--transition);
+        cursor: default;
+        width: fit-content;
+        margin: calc(var(--m-32) + 10px) auto var(--m-32);
+
+        &:hover {
+          letter-spacing: 2.5px;
+        }
+      }
+
+      .learning-imgs,
+      .design-imgs,
+      .current-learning-imgs,
+      .will-learning-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+      }
+
+      .tec-img {
+        background-color: rgba(255, 255, 255, 0.068);
+        border-radius: var(--rounded);
+        transition: var(--transition);
+        border: 2px solid transparent;
+        cursor: pointer;
+        overflow: hidden;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        padding: var(--p-5);
+        position: relative;
+
+        img {
+          width: 55px;
+          height: 55px;
+          transition: var(--transition);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(1) img,
+        &:nth-child(2) img {
+          width: 60px;
+          height: 60px;
+        }
+
+        &:hover {
+          border-radius: 50%;
+          border: 1px solid var(--main-color);
+        }
+
+        &:hover img {
+          transform: translate(-50%, -50%) scale(0.8);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  #about {
+    .about-content {
+
+      .learning,
+      .good-handel,
+      .current-learning,
+      .will-learning {
+        h2 {
+          &:hover {
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+  }
+}

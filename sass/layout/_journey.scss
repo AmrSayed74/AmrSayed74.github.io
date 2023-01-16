@@ -1,0 +1,141 @@
+@use "../helpers/index" as*;
+@use "../components/components" as*;
+
+#journey {
+  .container {
+    .journey-friends {
+      position: relative;
+      z-index: 1;
+      color: var(--light-color);
+      font-size: var(--bigger-font-size);
+      margin: var(--m-32) auto var(--m-24);
+      text-align: center;
+      font-weight: var(--font-bold);
+      transition: var(--transition);
+
+      &:hover {
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  .journey-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 40px;
+    position: relative;
+    font-family: var(--body-font2);
+
+    .journey-box {
+      h3 {
+        color: var(--light-color);
+        text-align: center;
+        margin-bottom: var(--m-12);
+      }
+    }
+    .journey-card {
+      position: relative;
+      overflow: hidden;
+      padding: var(--p-20);
+      background: linear-gradient(24deg, var(--secondary-color), var(--main-color));
+      border-radius: var(--rounded);
+      width: 300px;
+
+      .channel-photo {
+        overflow: hidden;
+        height: 300px;
+        border-radius: var(--rounded);
+        position: relative;
+        transition: var(--transition);
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          transition: var(--transition);
+          transition: 1s;
+          height: 100%;
+        }
+      }
+
+      .icons-container {
+        width: fit-content;
+        position: absolute;
+        bottom: -50%;
+        transition: var(--transition);
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .prev {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: .5s;
+          border-radius: 50%;
+          margin: 0 5px;
+          backdrop-filter: blur(20px);
+          background-color: rgba(255, 255, 255, 0.178);
+        }
+      }
+
+      &:hover .icons-container {
+        bottom: 10px;
+      }
+
+      &:hover .channel-photo img {
+        transform: rotate(3deg) scale(1.1);
+      }
+
+      &:hover .channel-photo::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #0000004d;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 325px) {
+  #journey {
+    .journey-content {
+      .journey-card {
+        width: 275px;
+        transform: scale(0.96);
+
+        .channel-photo {
+          height: 275px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #journey {
+    .container {
+      .journey-friends {
+
+        font-size: var(--normal-font-size);
+        &.heading {
+          padding: 0 var(--p-10);
+        }
+      }
+    }
+  }
+}
+.all-journey {
+  background-color: var(--secondary-dark-color);
+}

@@ -1,0 +1,133 @@
+@use "../helpers/index" as *;
+
+#contact {
+  padding-top: 80px;
+
+  .social-contact {
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    backdrop-filter: blur(5px);
+
+    div {
+      backdrop-filter: blur(5px);
+      background-color: #060e39bd;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      &:hover .social-link {
+        transform: scale(1.2);
+      }
+
+      .social-link {
+        transition: var(--transition);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 90px;
+        }
+      }
+    }
+
+    .facebook {
+      background-color: #3b599880;
+    }
+
+    .whats {
+      background-color: #075e5466;
+    }
+
+    .instagram {
+      background-color: #8a3ab980;
+    }
+
+    .gmail {
+      background-image: linear-gradient(90deg, #4285f480, #ff980080, #e0e0e080);
+    }
+
+    .github {
+      background: #17151580;
+    }
+
+    .linkedin {
+      background: #0072b16b;
+    }
+
+    .youtube {
+      background-color: #ff00002e;
+      position: relative;
+
+      &::after {
+        content: "Soon";
+        position: absolute;
+        color: #ffffff8c;
+        font-size: var(--mid-font-size);
+        font-weight: var(--font-semi-bold);
+        letter-spacing: 10px;
+        cursor: pointer;
+
+      }
+    }
+
+    .codepen {
+      background: #3c3b4166;
+    }
+
+    .twitter {
+      background-color: #00acee7a;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contact {
+    .social-contact {
+      div {
+        .social-link {
+          img {
+            width: 75px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #contact {
+    .social-contact {
+      div {
+        .social-link {
+          img {
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #contact {
+    .social-contact {
+      div {
+        .social-link {
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use "../helpers/index" as*; 
+
+// Make a  Main Container For Layouts
+.container {
+  padding-right: .75rem;
+  padding-left: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Media Queries
+
+// Small Screens & mobile
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+// Medium Screens & Tablets 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+// Large Screens & Laptops 
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+// X-Large Screens & Desktops
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+// X-Large Screens & Any Screens More Than 1200px
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+

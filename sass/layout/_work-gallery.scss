@@ -1,0 +1,87 @@
+@use "../helpers/index" as*;
+@use "../components/components" as*;
+
+
+#work {
+  .gallery-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+
+    .box {
+      position: relative;
+      width: 300px;
+      overflow: hidden;
+      padding: var(--p-20);
+      background: linear-gradient(24deg, var(--secondary-color), var(--main-color));
+      border-radius: var(--rounded);
+
+      .work-img {
+        overflow: hidden;
+        height: 300px;
+        border-radius: var(--rounded);
+        transition: var(--transition);
+        position: relative;
+        transition: var(--transition);
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          transition: var(--transition);
+        }
+      }
+
+      .icons-container {
+        width: fit-content;
+        position: absolute;
+        bottom: -50%;
+        transition: var(--transition);
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .prev {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: .5s;
+          border-radius: 50%;
+          margin: 0 5px;
+          backdrop-filter: blur(20px);
+          background-color: rgba(255, 255, 255, 0.178);
+        }
+      }
+
+      &:hover .icons-container {
+        bottom: 10px;
+      }
+
+      &:hover .work-img img {
+        transform: translateY(-20px);
+      }
+
+      &:hover .work-img::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #0000004d;
+      }
+
+      .youtube {
+        display: flex;
+      }
+    }
+  }
+}
