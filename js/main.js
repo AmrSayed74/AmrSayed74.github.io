@@ -19,7 +19,7 @@ function preload() {
   });
 }
 
-// preload();
+preload();
 /* ===== End Preload ====== */
 
 /* ===== Start Links Header ====== */
