@@ -1,5 +1,5 @@
-@use "../helpers/index" as*;
-@use "../components/components" as*;
+@use '../helpers/index' as *;
+@use '../components/components' as *;
 
 // Style Header
 .header {
@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--p-30);
-  z-index: 111;
+  z-index: 1001;
 
   .logo img {
     width: 60px;
@@ -45,7 +45,6 @@
         font-size: var(--normal-font-size);
         transition: var(--transition);
         display: inline-block;
-        
       }
     }
   }
@@ -85,7 +84,6 @@
     }
 
     &.active .up {
-
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
     }
@@ -105,7 +103,6 @@
 
 @media screen and (max-width: 992px) {
   #header {
-
     .large-nav {
       flex: 1;
       justify-content: center;
@@ -134,7 +131,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 768px) {
   #header {

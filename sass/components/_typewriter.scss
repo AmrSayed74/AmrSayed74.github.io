@@ -1,0 +1,45 @@
+#typewriter {
+  /* border-right: 0.1em solid #fff !important; */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  position: relative;
+}
+.typing-cursor {
+  width: 8px;
+  height: 30px;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  animation: opacity 0.8s infinite;
+  // animation-direction: alternate;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #000;
+  }
+}

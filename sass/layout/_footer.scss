@@ -1,9 +1,10 @@
-@use "../helpers/index" as*;
-@use "../components/components" as*;
+@use '../helpers/index' as *;
+@use '../components/components' as *;
 
 #footer {
   position: relative;
   padding: var(--p-30) 0;
+  background-color: var(--secondary-dark-color);
 
   .footer-content {
     display: flex;

@@ -43,6 +43,69 @@
   </div>
   <!-- ======== End Preload ======== -->
 
+
+  <section class="contact" id="contact">
+    <div class="contact-close">
+      <img src="./assets/imgs/Social-icon/close.png" alt="" class="contact-close__img">
+    </div>
+    <div class="social-contact">
+      <div class="facebook">
+        <a class="social-link" href="https://www.facebook.com/DevAmr74/" target="_blank">
+          <img src="./assets/imgs/Social-icon/facebook.png" alt="facebook">
+        </a>
+      </div>
+
+      <div class="whats">
+        <a class="social-link" href="https://wa.me/+201005074554" target="_blank">
+          <img src="./assets/imgs/Social-icon/whatsapp.png" alt="whatsapp">
+        </a>
+      </div>
+
+      <div class="instagram">
+        <a class="social-link" href="https://www.instagram.com/amr.sayed74/" target="_blank">
+          <img src="./assets/imgs/Social-icon/instagram.png" alt="instagram">
+        </a>
+      </div>
+
+      <div class="gmail">
+        <a class="social-link" href="mailto:amrsaaayed@gmail.com" target="_blank">
+          <img src="./assets/imgs/Social-icon/gmail.png" alt="gmail">
+        </a>
+      </div>
+
+      <div class="linkedin">
+        <a class="social-link" href="https://www.linkedin.com/in/amr-elsayed74/" target="_blank">
+          <img src="./assets/imgs/Social-icon/linkedin.png" alt="linkedin">
+        </a>
+      </div>
+
+      <div class="github">
+        <a class="social-link" href="https://github.com/AmrSayed74" target="_blank">
+          <img src="./assets/imgs/Social-icon/github-svgrepo.svg" alt="github">
+        </a>
+      </div>
+
+      <div class="youtube">
+        <a class="social-link" href="/">
+          <img src="./assets/imgs/Social-icon/youtube.png" alt="youtube">
+        </a>
+      </div>
+
+      <div class="codepen">
+        <a class="social-link" href="https://codepen.io/amrsayed74" target="_blank">
+          <img src="./assets/imgs/Social-icon/codepen.png" alt="codepen">
+        </a>
+      </div>
+
+      <div class="twitter">
+        <a class="social-link" href="https://twitter.com/Amr_ElSsyed" target="_blank">
+          <img src="./assets/imgs/Social-icon/twitter.png" alt="twitter">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ======== Start Header ========-->
   <header class="header" id="header">
     <div class="logo">
@@ -88,11 +151,10 @@
         <li class="nav-list"><a class="nav-link" data-section=".about" href="#">About</a></li>
         <li class="nav-list"><a class="nav-link" data-section=".work" href="#">Work Gallery</a></li>
         <li class="nav-list"><a class="nav-link" data-section=".summaries" href="#">Summaries</a></li>
-        <li class="nav-list"><a class="nav-link" data-section=".journey" href="#">Journey</a></li>
-        <li class="nav-list"><a class="nav-link" data-section=".tools" href="#">Tools</a></li>
+        <li class="nav-list"><a class="nav-link" data-section=".tools" href="#">Used Tools</a></li>
       </ul>
     </nav>
-    <a class="contact" href="contact.html">
+    <div class="contact">
       <button class="c-button">
         Contact
         <div data-section=".footer" class="c-button__blobs">
@@ -111,7 +173,7 @@
           </filter>
         </defs>
       </svg>
-    </a>
+    </div>
 
     <!-- Start Toggle Icon Nav Menu -->
     <div class="menu-icon">
@@ -128,8 +190,7 @@
         <li class="phone-nav-li"><a class="phone-link" data-section=".about" href="#">About</a></li>
         <li class="phone-nav-li"><a class="phone-link" data-section=".work" href="#">Work Gallery</a></li>
         <li class="phone-nav-li"><a class="phone-link" data-section=".summaries" href="#">Summaries</a></li>
-        <li class="phone-nav-li"><a class="phone-link" data-section=".journey" href="#">Journey</a></li>
-        <li class="phone-nav-li"><a class="phone-link" data-section=".tools" href="#">Tools</a></li>
+        <li class="phone-nav-li"><a class="phone-link" data-section=".tools" href="#">Used Tools</a></li>
       </ul>
       <div class="social-contact">
         <div class="facebook">
@@ -201,11 +262,12 @@
         <div class="left-section">
           <h3 class="welcome">Hi, I'm Amr Elsayed</h3>
           <h2>I'm a
-            <span class="typed"></span>
+            <span id="typewriter"></span>
+            <span class="typing-cursor"></span>
           </h2>
           <p class="brief">Hello Friends, I'm a Web Developer With 1 Year Experience and learning increasingly.</p>
           <button class="cv-btn">
-            <a class="cv-link" href="./assets/doc/cv/Amr_Elsayed_CV.pdf">Download CV</a>
+            <a class="cv-link" href="./assets/doc/cv/AmrElsayed_CV.pdf">Download CV</a>
           </button>
         </div>
         <div class="right-section">
@@ -256,7 +318,22 @@
               <img src="assets/imgs/tec-icons/bootstrap.png" alt="">
             </div>
             <div class="tec-img">
+              <img src="assets/imgs/tec-icons/tailwind.png" alt="">
+            </div>
+            <div class="tec-img">
               <img src="assets/imgs/tec-icons/sass.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/vitejs-svgrepo-com.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/npm.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/react.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/redux.png" alt="">
             </div>
             <div class="tec-img">
               <img src="assets/imgs/tec-icons/git.png" alt="">
@@ -265,30 +342,40 @@
               <img src="assets/imgs/tec-icons/github.png" alt="">
             </div>
             <div class="tec-img">
+              <img src="assets/imgs/tec-icons/gitlab.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/bitbucket.png" alt="">
+            </div>
+            <div class="tec-img">
               <img src="assets/imgs/tec-icons/notion.png" alt="">
             </div>
+
           </div>
         </div>
         <div class="current-learning" data-aos="fade-left">
           <h2>Current Learning</h2>
           <div class="current-learning-imgs">
             <div class="tec-img">
-              <img src="assets/imgs/tec-icons/redux.png" alt="">
-            </div>
-            <div class="tec-img">
-              <img src="assets/imgs/tec-icons/react.png" alt="">
-            </div>
-            <div class="tec-img">
-              <img src="assets/imgs/tec-icons/tailwind.png" alt="">
-            </div>
-            <div class="tec-img">
               <img src="assets/imgs/tec-icons/typescript.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/material-ui.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/next-js.png" alt="">
             </div>
           </div>
         </div>
         <div class="good-handel" data-aos="fade-right">
           <h2>Good To Handel</h2>
           <div class="design-imgs">
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/chatgpt-icon.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/camtasia.png" alt="">
+            </div>
             <div class="tec-img">
               <img src="assets/imgs/tec-icons/codewars_logo_icon_145389.png" alt="">
             </div>
@@ -303,6 +390,15 @@
             </div>
             <div class="tec-img">
               <img src="assets/imgs/tec-icons/stackoverflow.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/word.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/excelpng.png" alt="">
+            </div>
+            <div class="tec-img">
+              <img src="assets/imgs/tec-icons/powerpoint.png" alt="">
             </div>
           </div>
         </div>
@@ -371,6 +467,54 @@
 
         <div class="box" data-aos="fade-up" data-aos-duration="1500">
           <div class="work-img">
+            <img src="assets/imgs/work/freelance2.webp" alt="freelance">
+          </div>
+          <div class="icons-container ">
+            <div class="prev">
+              <a href="/" target="_blank">
+                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/gqzfzudq.json" trigger="loop-on-hover"
+                  colors="primary:#ffffff,secondary:#ffffff" style="width:55px;height:55px">
+                </lord-icon>
+              </a>
+            </div>
+            <div class="prev">
+              <a href="/">
+                <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/dtgezzsi.json" trigger="loop-on-hover"
+                  colors="primary:#ffffff,secondary:#ffffff" style="width:55px;height:55px">
+                </lord-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-duration="1500">
+          <div class="work-img">
+            <img src="assets/imgs/work/cima-react.webp" alt="freelance">
+          </div>
+          <div class="icons-container ">
+            <div class="prev">
+              <a href="https://cima-react-project.netlify.app/" target="_blank">
+                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/gqzfzudq.json" trigger="loop-on-hover"
+                  colors="primary:#ffffff,secondary:#ffffff" style="width:55px;height:55px">
+                </lord-icon>
+              </a>
+            </div>
+            <div class="prev">
+              <a href="https://github.com/AmrSayed74/React_project" target="_blank">
+                <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/dtgezzsi.json" trigger="loop-on-hover"
+                  colors="primary:#ffffff,secondary:#ffffff" style="width:55px;height:55px">
+                </lord-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-duration="1500">
+          <div class="work-img">
             <img src="assets/imgs/work/freelance-index-html.webp" alt="freelance">
           </div>
           <div class="icons-container ">
@@ -392,6 +536,7 @@
             </div>
           </div>
         </div>
+
 
         <div class="box" data-aos="fade-up" data-aos-duration="1500">
           <div class="work-img">
@@ -685,385 +830,34 @@
             </a>
           </div>
         </div>
+        <div class="summary">
+          <h3>How CSS Works Behind The scenes</h3>
+          <div class="pdf-content">
+            <a href="https://drive.google.com/drive/u/2/folders/1O55fjMeupx9e6oCOUH7ikM8jh-nXV0qC?fbclid=IwAR3Gr3o6oF2mmzgidQCaSNxtwCUQhZwETjSik75s0efLn9SBe_GtoQfUTVs"
+              target="_blank">
+              <div class="button-veiw">
+                <div class="letter-box">O</div>
+                <div class="letter-box">N</div>
+                <div class="letter-box">L</div>
+                <div class="letter-box">I</div>
+                <div class="letter-box">N</div>
+                <div class="letter-box">E</div>
+                <div class="letter-box">.</div>
+                <div class="letter-box">.</div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- ======== End Summaries Section ========-->
-  <!-- ======== Start Journey Section ========-->
-  <section class="journey main-section" id="journey">
-    <div class="light-1"></div>
-    <div class="container">
-      <div class="heading">
-        <h3>Journey</h3>
-      </div>
-      <div class="journey-content pt-section-content">
-
-        <div class="ball-1"></div>
-        <div class="ball-2"></div>
-        <div class="ball-3"></div>
-        <div class="big-ball-2"></div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Elzero Web School</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/elzero.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@ElzeroAcademy" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Droos Online</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/DroosOnline.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@DroosOnline4u" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Codezilla</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/codezilla.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@Codezilla" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Kevin Powell</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/KevinPowell.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@KevinPowell" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Easy Tutorials</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/Easytutorials.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@EasyTutorialsVideo" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Metwally Labs</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/MetwallyLabs.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@MetwallyLabs" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Codevolution</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/Codevolution.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@Codevolution" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Unique Coderz Academy</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/UniqueCoderzAcademy.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@UniqueCoderzAcademy" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>ZAmericanEnglish</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/ZAmericanEnglish.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@ZAmericanEnglish" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Mohamed Abusrea - محمد أبوسريع</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/MohamedAbusrea.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@MohamedAbusrea" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>غريب الشيخ || Ghareeb Elshaikh</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/GhareebElshaikh.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@GhareebElshaikh" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Ali Muhammad Ali</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/AliMuhammadAli.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@AliMuhammadAli" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Kareem Elsayed كريم السيد</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/kareemelsayed.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@kareemelsayedvlogs" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>MNUE</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/nasrallahmnue.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@NasrAllah9988" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Mohammad Elghaleez</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/mohelghaleez.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@mohelghaleez" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Amir Mounir أمير منير</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/amirmounirofficial.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@amirmounirofficial" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Hazem El Seddiq</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/HazemElSeddiq.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@HazemElSeddiq" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-box" data-aos="fade-up" data-aos-duration="1500">
-          <h3>Ramzy Abdelaziz رمزي عبدالعزيز</h3>
-          <div class="journey-card">
-            <div class="channel-photo">
-              <img src="assets/imgs/helpers-websites/ramzyabdelaziz.jpg" alt="">
-            </div>
-            <div class="icons-container">
-              <a href="https://www.youtube.com/@ramzyabdelaziz7050" target="_blank">
-                <div class="prev">
-                  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                  <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff" style="width:60px;height:60px">
-                  </lord-icon>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <a href="journey.html" target="_blank">
-        <button class="Journey-btn">
-          <span>All Journey Friends</span>
-          <svg viewBox="0 0 13 10" height="10px" width="15px">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </button>
-      </a>
-    </div>
-  </section>
-  <!-- ======== End Journey Section ========-->
   <!-- ======== Start Tools Section ========-->
   <section class="tools main-section" id="tools">
     <div class="light-2"></div>
     <div class="container">
       <div class="heading">
-        <h3>Tools</h3>
+        <h3>Used Tools</h3>
       </div>
       <p class="tools-title pt-section-content">In This Section I'll Show You All Tools That Helped Me And Used In This
         Website </p>

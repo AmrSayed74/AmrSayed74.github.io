@@ -1,9 +1,9 @@
-@use "../helpers/index" as*;
-@use "../components/components" as*;
+@use '../helpers/index' as *;
+@use '../components/components' as *;
 
 #tools {
   position: relative;
-  background-color: var(--secondary-dark-color);
+  // background-color: var(--secondary-dark-color);
 
   .tools-title {
     color: var(--light-color);
@@ -27,7 +27,12 @@
 
     .tool-container {
       width: 450px;
-      background: linear-gradient(135.15deg, #0d4b8d 3.17%, #1b3b76 0.88%, var(--main-color) 97.46%);
+      background: linear-gradient(
+        135.15deg,
+        #0d4b8d 3.17%,
+        #1b3b76 0.88%,
+        var(--main-color) 97.46%
+      );
       overflow: hidden;
       position: relative;
       color: var(--light-color);
@@ -65,7 +70,7 @@
           justify-content: center;
           align-items: center;
           cursor: pointer;
-          transition: .5s;
+          transition: 0.5s;
           border-radius: 50%;
           margin: 0 5px;
           backdrop-filter: blur(20px);
@@ -78,7 +83,7 @@
       }
 
       &:hover::after {
-        content: "";
+        content: '';
         position: absolute;
         width: 100%;
         height: 100%;

@@ -1,9 +1,9 @@
-@use "../helpers/index" as*;
-@use "../components/components" as*;
+@use '../helpers/index' as *;
+@use '../components/components' as *;
 
 #summaries {
   background-color: var(--secondary-dark-color);
-  
+
   .summaries-content {
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +21,7 @@
     .summary {
       h3 {
         font-size: var(--mid-font-size);
+        text-align: center;
       }
 
       display: flex;

@@ -1,5 +1,5 @@
-@use "../helpers/index" as*;
-@use "../components/components" as*;
+@use '../helpers/index' as *;
+@use '../components/components' as *;
 
 #phone-nav {
   display: none;
@@ -51,7 +51,15 @@
         &:hover:nth-child(4) {
           letter-spacing: 1px;
         }
-
+        &:nth-child(5) {
+          position: relative;
+          left: 50%;
+        }
+        @media (width < 576px) {
+          &:nth-child(5) {
+            width: 200%;
+          }
+        }
         .phone-link {
           color: var(--light-color);
           width: 100%;
@@ -78,7 +86,7 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        &:hover .social-link{
+        &:hover .social-link {
           transform: scale(1.2);
         }
         .social-link {
@@ -107,7 +115,12 @@
       }
 
       .gmail {
-        background-image: linear-gradient(90deg, #4285f480, #ff980080, #e0e0e080);
+        background-image: linear-gradient(
+          90deg,
+          #4285f480,
+          #ff980080,
+          #e0e0e080
+        );
       }
 
       .github {
@@ -122,14 +135,13 @@
         background-color: #ff00002e;
         position: relative;
         &::after {
-          content: "Soon";
+          content: 'Soon';
           position: absolute;
           color: #ffffff8c;
           font-size: var(--mid-font-size);
           font-weight: var(--font-semi-bold);
           letter-spacing: 10px;
           cursor: pointer;
-      
         }
       }
 

@@ -1,8 +1,25 @@
-@use "../helpers/index" as *;
-
 #contact {
-  padding-top: 80px;
-
+  width: 100%;
+  position: fixed;
+  z-index: 1002;
+  top: -130%;
+  transition: var(--transition);
+  .contact-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    .contact-close__img {
+      width: 80px;
+      transition: var(--transition);
+      cursor: pointer;
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+  }
   .social-contact {
     height: calc(100vh - 80px);
     display: grid;
@@ -10,7 +27,7 @@
     align-items: center;
     justify-items: center;
     gap: 5px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
 
     div {
       backdrop-filter: blur(5px);
@@ -69,14 +86,13 @@
       position: relative;
 
       &::after {
-        content: "Soon";
+        content: 'Soon';
         position: absolute;
         color: #ffffff8c;
         font-size: var(--mid-font-size);
         font-weight: var(--font-semi-bold);
         letter-spacing: 10px;
         cursor: pointer;
-
       }
     }
 
@@ -130,4 +146,8 @@
       }
     }
   }
+}
+
+.active-contact {
+  top: 0 !important;
 }

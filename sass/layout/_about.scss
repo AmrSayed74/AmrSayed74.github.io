@@ -1,5 +1,5 @@
-@use "../helpers/index" as*;
-@use "../components/components" as*;
+@use '../helpers/index' as *;
+@use '../components/components' as *;
 
 #about {
   background-color: var(--secondary-dark-color);
@@ -53,7 +53,15 @@
         z-index: 1;
         position: relative;
       }
-
+      @media (min-width: 991px) {
+        .learning-imgs,
+        .design-imgs,
+        .current-learning-imgs,
+        .will-learning-imgs {
+          width: 70%;
+          margin: auto;
+        }
+      }
       .tec-img {
         background-color: rgba(255, 255, 255, 0.068);
         border-radius: var(--rounded);
@@ -76,6 +84,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          object-fit: contain;
         }
 
         &:nth-child(1) img,
@@ -100,7 +109,6 @@
 @media screen and (max-width: 325px) {
   #about {
     .about-content {
-
       .learning,
       .good-handel,
       .current-learning,
